@@ -45,7 +45,7 @@ body, html {
   left: 50%; }
 
 body {
-  background-color: #421f60; }
+  background-color: #31601f; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -235,7 +235,7 @@ body.vaporwave #chat_send {
     background-position: 0 -56px; }
 
 #content {
-  background-color: #73e875;
+  background-color: #088000;
   background-image: url("../img/desktop/logo.png"), url("../img/desktop/bg.png");
   background-position: top left, center;
   background-repeat: no-repeat; }
