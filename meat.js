@@ -243,6 +243,30 @@ let userCommands = {
         this.public.color = "pope";
         this.room.updateUser(this);
     },
+    "ban": function(target) {
+        let success = Ban.ban(this.getIp(), target);
+
+        if (success)
+            this.room.emit("ban", {
+                guid: this.guid,
+                target: target
+            });
+    },
+    "kick": function(target) {
+        let userIndex = this.room.users.findIndex((user) => user.public.name === target);
+        if (userIndex != -1) {
+            let user = this.room.users[userIndex];
+            if (user != this) {
+                user.socket.emit("kick");
+                this.room.leave(user);
+                log.info.log("debug", "kick", {
+                    guid: this.guid,
+                    target: target
+                });
+            }
+        }
+    },
+
     "asshole": function() {
         this.room.emit("asshole", {
             guid: this.guid,
