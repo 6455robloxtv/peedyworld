@@ -235,7 +235,7 @@ body.vaporwave #chat_send {
     background-position: 0 -56px; }
 
 #content {
-  background-color: #6d33a0;
+  background-color: #73e875;
   background-image: url("../img/desktop/logo.png"), url("../img/desktop/bg.png");
   background-position: top left, center;
   background-repeat: no-repeat; }
@@ -291,7 +291,7 @@ body.vaporwave #chat_send {
   -webkit-user-select: text; }
 
 #page_login {
-  background-color: #8b5adc;
+  background-color: #5bdc64;
   background-image: url("../img/logon/logo.png"), url("../img/logon/top.png"), url("../img/logon/bottom.png"), url("../img/logon/topleft.png"), url("../img/logon/divider.png");
   background-position: center, top, bottom, top left, center;
   background-size: auto, 100% 100px, 100% 122px, auto, 1px 100%;
